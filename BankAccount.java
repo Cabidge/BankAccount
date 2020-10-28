@@ -8,4 +8,12 @@ public class BankAccount {
         accountID = id;
         password = pass;
     }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public int getAccountID() {
+        return accountID;
+    }
 }
