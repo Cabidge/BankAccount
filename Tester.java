@@ -5,5 +5,7 @@ public class Tester {
         System.out.print(account.getBalance());
         System.out.print(" in its balance, and an id of ");
         System.out.println(account.getAccountID());
+
+        account.setPassword("BetterPassword");
     }
 }
