@@ -3,8 +3,8 @@ public class BankAccount {
     private int accountID;
     private String password;
 
-    public BankAccount(double bal, int id, String pass) {
-        balance = bal;
+    public BankAccount(int id, String pass) {
+        balance = 0;
         accountID = id;
         password = pass;
     }
@@ -36,5 +36,9 @@ public class BankAccount {
         }
         balance -= amount;
         return true;
+    }
+
+    public String toString() {
+        return getAccountID() + "\t" + getBalance();
     }
 }
