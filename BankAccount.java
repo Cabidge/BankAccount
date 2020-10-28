@@ -19,6 +19,14 @@ public class BankAccount {
 
     public void setPassword(String pass) {
         password = pass;
-        System.out.println("Password changed to " + pass);
+        //System.out.println("Password changed to " + pass); // For testing
+    }
+
+    public boolean deposit(double amount) {
+        if (amount < 0) {
+            return false;
+        }
+        balance += amount;
+        return true;
     }
 }
