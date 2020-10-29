@@ -41,4 +41,8 @@ public class BankAccount {
     public String toString() {
         return "#" + getAccountID() + "\t" + "$" + getBalance();
     }
+
+    public boolean authenticate(String password) {
+        return password.equals(this.password);
+    }
 }
